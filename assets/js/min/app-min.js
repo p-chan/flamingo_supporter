@@ -1,0 +1,1 @@
+$(function(){function i(){var i=$(window).height();$(".header").height(i)}var n=!1;$(window).load(function(){i()}),$(window).resize(function(){n!==!1&&clearTimeout(n),n=setTimeout(function(){i()},250)})});
