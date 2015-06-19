@@ -53,6 +53,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/favicon2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3422,
+		"inputAbbreviatedPath": "\/assets\/images\/favicon2.png",
+		"outputAbbreviatedPath": "\/assets\/images\/favicon2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/header.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -204,8 +215,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "learner",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "supporter",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_blue"
 	},
 "projectSettings": {
