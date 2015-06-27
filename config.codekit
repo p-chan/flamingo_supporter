@@ -86,6 +86,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/ogp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128964,
+		"inputAbbreviatedPath": "\/assets\/images\/ogp.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/ogp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/scroll.png": {
 		"fileType": 32768,
 		"ignore": 0,
