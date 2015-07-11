@@ -441,7 +441,8 @@ ul {
   letter-spacing: 2px;
   text-align: center;
   -webkit-transition: .2s ease width;
-          transition: .2s ease width; }
+          transition: .2s ease width;
+  -webkit-appearance: none; }
 
 /*for Webkit*/
 input::-webkit-input-placeholder {
