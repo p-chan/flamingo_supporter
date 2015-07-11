@@ -356,6 +356,9 @@ html {
   font-family: "proxima-nova", sans-serif;
   color: #5d5d5d; }
 
+body {
+  position: relative; }
+
 ul {
   list-style: none;
   margin: 0;
@@ -403,7 +406,7 @@ ul {
 
 .header__inner__catch {
   -webkit-font-smoothing: antialiased;
-  margin: 20px 0 10px;
+  margin: 20px 0 55px;
   padding: 0 10px;
   font-size: 24px;
   color: #fff;
@@ -424,20 +427,51 @@ ul {
 
 .header__inner__button {
   display: inline-block;
-  margin: 45px 0 0;
+  width: 200px;
   padding: 15px 30px 17px;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 30px;
+  background: transparent;
   color: #fff;
   font-weight: light;
   -webkit-font-smoothing: antialiased;
   -webkit-transition: background-color 0.15s;
           transition: background-color 0.15s;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-align: center;
+  -webkit-transition: .2s ease width;
+          transition: .2s ease width; }
+
+/*for Webkit*/
+input::-webkit-input-placeholder {
+  color: #fff; }
+
+/*for Firefox*/
+input:-moz-placeholder {
+  color: #fff; }
 
 .header__inner__button:hover {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.header__inner__button:focus {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none; }
+
+.header__inner__button--go {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 -62px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #fff; }
+
+.header__inner__button__description {
+  display: none;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-font-smoothing: antialiased; }
 
 #header__movie {
   z-index: 300;
@@ -451,6 +485,26 @@ ul {
 @media (max-width: 520px) {
   #header__movie {
     display: none; } }
+
+#js-registered {
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 350px;
+  margin: -175px 0 0 -250px;
+  border-radius: 10px;
+  background: white; }
+
+#js-registered form input[type="submit"] {
+  border: none;
+  height: 30px; }
+
+#js-registered form input[type="submit"]:focus {
+  width: 750px;
+  margin: -175px 0 0 -375px; }
 
 .feature {
   display: -webkit-box;

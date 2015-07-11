@@ -23,12 +23,19 @@
   <header class="header">
     <div class="heaedr__filter is-filter"></div>
     <video id="header__movie" poster="./assets/images/header.jpg" autoplay="play" preload="auto" loop="loop">
+    <!-- <video id="header__movie" poster="./assets/images/header.jpg"> -->
       <source src="./assets/media/movie.mp4" type="video/mp4">
     </video>
     <div class="header__inner">
       <h1 class="header__inner__logo"><img src="./assets/images/logo.png" height="104" width="284" alt="Flamingo"></h1>
       <p class="header__inner__catch">Let's support language learners and get satisfactory reward.</p>
-      <a href="https://docs.google.com/forms/d/1IORiK4j2Ytg7-SLjas53pNZOdTr0GI5wNXhue2uQA9E/viewform?c=0&w=1" target="_brank" class="header__inner__button">Pre Registered</a>
+      <!-- action="http://api.app-flamingo.com/pre_registers"  -->
+      <form id="header__inner__form" method="POST">
+        <!--  name="pre_register[email]" -->
+        <input class="header__inner__button" type="email" placeholder="Pre Registered">
+        <p class="header__inner__button__description">Press to Enter</p>
+      </form>
+      <!-- <input class="header__inner__button--go" type="submit" value="GO"> -->
     </div>
   </header>
   <main role="main">

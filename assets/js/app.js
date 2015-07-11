@@ -1,5 +1,36 @@
 $(function () {
 
+$(".header__inner__button").on({
+  click: function () {
+    $(".header__inner__button").attr("placeholder", "Your Email");
+    $(".header__inner__button__description").css({
+      "display": "block"
+    });
+  }
+});
+
+$("#header__inner__form").submit(function () {
+  var data = {
+    pre_register : {
+      email : $('.header__inner__button').val()
+    }
+  };
+  $.ajax({
+    type: "POST",
+    url: "http://api.app-flamingo.com/pre_registers",
+    data: data,
+    success: function(data, dataType) {
+      $(".header__inner__button").attr("placeholder", "Thank You");
+      $('.header__inner__button').val("");
+      $(".header__inner__button__description").text("Please wait an email from us.")
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+      alert('Error : ' + errorThrown);
+    }
+  });
+  return false;
+});
+
 
 var resize_timer = false;
 
