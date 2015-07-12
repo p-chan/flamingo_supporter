@@ -18,7 +18,7 @@ $("#header__inner__form").submit(function () {
   $.ajax({
     type: "POST",
     url: "http://api.app-flamingo.com/pre_registers",
-    async: false,
+    async: true,
     data: data,
     success: function(res) {
       $(".header__inner__button").attr("placeholder", "Thank You");
