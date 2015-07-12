@@ -18,15 +18,16 @@ $("#header__inner__form").submit(function () {
   $.ajax({
     type: "POST",
     url: "http://api.app-flamingo.com/pre_registers",
-    async: true,
     data: data,
     success: function(res) {
+      // alert(res);
       $(".header__inner__button").attr("placeholder", "Thank You");
       $('.header__inner__button').val("");
       $(".header__inner__button__description").text("Please wait an email from us.");
     },
-    error: function(xhr) {
-      alert('Error');
+    error: function(jqXHR, textStatus, errorThrown) {
+      alert('ERR: Sorry try again.');
+      // alert('Error : ' + jqXHR + ':' + textStatus + ':' + errorThrown);
     }
   });
   return false;
