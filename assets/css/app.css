@@ -586,6 +586,109 @@ input:-moz-placeholder {
 .download__button:hover {
   background-color: rgba(255, 255, 255, 0.3); }
 
+.instagram {
+  position: relative;
+  overflow: hidden; }
+
+.instagram__filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); }
+
+.instagram__photo {
+  float: left;
+  display: inline;
+  width: 12.5%; }
+
+@media (max-width: 520px) {
+  .instagram__photo {
+    width: 25%; } }
+
+.instagram__photo img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.instagram__content {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.instagram__content__button {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  color: #fff; }
+
+.instagram__content__button div {
+  display: table-cell;
+  vertical-align: middle; }
+
+.instagram__content__button div a {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 30px;
+  background: transparent;
+  color: #fff;
+  font-weight: light;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s;
+          transition: background-color 0.15s;
+  letter-spacing: 2px;
+  -webkit-appearance: none;
+  padding: 18px 30px 20px; }
+
+.instagram__content__button a:hover {
+  background: rgba(255, 255, 255, 0.15); }
+
+.inquiry {
+  padding: 150px 0;
+  background: #f9f9f9;
+  text-align: center; }
+
+.inquiry__title {
+  margin: 0;
+  font-size: 28px;
+  color: #333; }
+
+.inquiry__description {
+  margin: 15px 0 30px;
+  font-size: 18px; }
+
+.inquiry__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 320px;
+  margin: 0 auto; }
+
+.inquiry__list__item a {
+  text-decoration: none;
+  -webkit-transition: 0.15s ease opacity;
+          transition: 0.15s ease opacity;
+  color: #333; }
+
+.inquiry__list__item a:hover {
+  opacity: 0.7; }
+
+.inquiry__list__item--line {
+  padding: 2px 0; }
+
 .article__header {
   padding: 100px 0;
   background: url(../images/download.jpg) center center;

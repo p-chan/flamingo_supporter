@@ -1,5 +1,6 @@
 $(function () {
 
+
 $(".header__inner__button").on({
   click: function () {
     $(".header__inner__button").attr("placeholder", "Your Email");
@@ -64,15 +65,34 @@ function fitHeaderSize () {
 
   $(".heaedr__filter").height(height);
 
-  // $("#header__movie").css({
-  //   "marginLeft": - ne_margin + 'px'
-  // });
-
   $(".header__inner").css({
     "marginTop": - header_inner_height / 2 + 'px',
     "marginLeft": - header_inner_width / 2 + 'px'
   });
 
+}
+
+getInstagramPhotos();
+
+function getInstagramPhotos () {
+  var getNum = 24;
+  $.ajax({
+    url: "https://api.instagram.com/v1/tags/flamingo/media/recent",
+    data: {
+        access_token: "1197845562.1213445.1dcd0702fdac4f2483de4d9462350e78",
+        count: getNum
+    },
+    cache: false,
+    dataType: "jsonp",
+    error: function() {
+      console.log('err!!');
+    },
+    success: function(res) {
+      for (var i = 0; i < getNum; i++) {
+        $(".instagram").append('<div class="instagram__photo"><img src="' + res.data[i].images.low_resolution.url + '"></div>');
+      };
+    }
+  });
 }
 
 });
